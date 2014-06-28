@@ -5,5 +5,5 @@ block content
     .content
         .row
             .column-12
-                | #{autopages.parseMarkdown(file)}
+                != autopages.parseMarkdown(file)
 

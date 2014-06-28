@@ -12,3 +12,6 @@ block content
                 .column-12
                     != autopages.parseMarkdown('posts/' + post)
 
+                    a(href="/posts/" + post)
+                        | permalink
+
