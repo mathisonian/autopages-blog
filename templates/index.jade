@@ -12,6 +12,5 @@ block content
                 ul
                     for post in autopages.readDirectory('posts')
                         li
-                            a(href="/posts/#{autopages.stripExtension(post)}")
+                            a(href="./posts/#{autopages.stripExtension(post)}")
                                 | #{autopages.stripExtension(post)}
-
