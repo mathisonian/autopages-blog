@@ -10,7 +10,7 @@ block content
         .row
             .column-12
                 ul
-                    for post in autopages.readDirectory('posts')
+                    for post in autopages.readDirectory('posts').reverse()
                         li
                             a(href="./posts/#{autopages.stripExtension(post)}")
                                 | #{autopages.stripExtension(post)}
